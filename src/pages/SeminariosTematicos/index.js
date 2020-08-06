@@ -1,10 +1,13 @@
 import React from 'react';
+import PageDefault from '../../components/PageDefault';
+import Footer from '../../components/Footer';
 
 function SeminariosTematicos() {
   return(
-    <div>
-      <p>Seminários Temáticos</p>
-    </div>
+    <PageDefault title="Seminários Temáticos">
+      <p>Texto da seção Seminários Temáticos</p>
+      <Footer />
+    </PageDefault>
   );
 }
 

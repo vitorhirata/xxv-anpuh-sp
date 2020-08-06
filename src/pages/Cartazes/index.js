@@ -1,10 +1,13 @@
 import React from 'react';
+import PageDefault from '../../components/PageDefault';
+import Footer from '../../components/Footer';
 
 function Cartazes() {
   return(
-    <div>
-      <p>Cartazes</p>
-    </div>
+    <PageDefault title="Cartazes">
+      <p>Texto da seção Cartazes</p>
+      <Footer />
+    </PageDefault>
   );
 }
 

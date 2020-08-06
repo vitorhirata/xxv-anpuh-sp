@@ -1,10 +1,13 @@
 import React from 'react';
+import PageDefault from '../../components/PageDefault';
+import Footer from '../../components/Footer';
 
 function Contato() {
   return(
-    <div>
-      <p>Contato</p>
-    </div>
+    <PageDefault title="Contato">
+      <p>Texto da seção Contato</p>
+      <Footer />
+    </PageDefault>
   );
 }
 

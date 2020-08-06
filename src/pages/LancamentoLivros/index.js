@@ -1,10 +1,13 @@
 import React from 'react';
+import PageDefault from '../../components/PageDefault';
+import Footer from '../../components/Footer';
 
 function LancamentoLivros() {
   return(
-    <div>
-      <p>Lançamento de Livros</p>
-    </div>
+    <PageDefault title="Lançamento de Livros">
+      <p>Texto da seção Lançamento de Livros</p>
+      <Footer />
+    </PageDefault>
   );
 }
 

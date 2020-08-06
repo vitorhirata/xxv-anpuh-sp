@@ -1,10 +1,13 @@
 import React from 'react';
+import PageDefault from '../../components/PageDefault';
+import Footer from '../../components/Footer';
 
 function MesasRedondas() {
   return(
-    <div>
-      <p>Mesas Redondas</p>
-    </div>
+    <PageDefault title="Mesas Redondas">
+      <p>Texto da seção Mesas Redondas</p>
+      <Footer />
+    </PageDefault>
   );
 }
 
