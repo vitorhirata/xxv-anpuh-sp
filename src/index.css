@@ -1,31 +1,11 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
 :root {
   --yellow: #F4B303;
   --blue: #608097;
   --black: #000000;
   --white: #FFFFFF;
-  --blackLighter: #9E9E9E;
-  --grayLight: #F5F5F5;
-  --grayMedium: #e5e5e5;
-}
-
-html,
-body,
-p{
-  margin: 0;
-  padding: 0;
 }
 
 a {
   color: inherit;
-}
-
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
+  text-decoration: none;
 }

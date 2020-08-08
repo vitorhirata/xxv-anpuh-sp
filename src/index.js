@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import theme from './theme';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Inicio from './pages/Inicio';
 import Contato from './pages/Contato';
 import Agenda from './pages/Agenda';
@@ -16,19 +19,23 @@ import LancamentoLivros from './pages/LancamentoLivros';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Inicio} exact />
-        <Route path="/contato" component={Contato} exact />
-        <Route path="/programacao/agenda" component={Agenda} />
-        <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
-        <Route path="/programacao/conferencias" component={Conferencias} />
-        <Route path="/programacao/minicursos" component={Minicursos} />
-        <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
-        <Route path="/programacao/cartazes" component={Cartazes} />
-        <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
-      </Switch>
-    </BrowserRouter>
+    <CssBaseline >
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Inicio} exact />
+            <Route path="/contato" component={Contato} exact />
+            <Route path="/programacao/agenda" component={Agenda} />
+            <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
+            <Route path="/programacao/conferencias" component={Conferencias} />
+            <Route path="/programacao/minicursos" component={Minicursos} />
+            <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
+            <Route path="/programacao/cartazes" component={Cartazes} />
+            <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
+          </Switch>
+        </BrowserRouter>
+      </ThemeProvider>
+    </CssBaseline>
   </React.StrictMode>,
   document.getElementById('root')
 );
