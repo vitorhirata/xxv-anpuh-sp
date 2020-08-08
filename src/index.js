@@ -9,13 +9,13 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Inicio from './pages/Inicio';
 import Contato from './pages/Contato';
 import Apoio from './pages/Apoio';
-import Agenda from './pages/Agenda';
-import MesasRedondas from './pages/MesasRedondas';
-import Conferencias from './pages/Conferencias';
-import Minicursos from './pages/Minicursos';
-import SeminariosTematicos from './pages/SeminariosTematicos';
-import Cartazes from './pages/Cartazes';
-import LancamentoLivros from './pages/LancamentoLivros';
+import Agenda from './pages/Programacao/Agenda';
+import MesasRedondas from './pages/Programacao/MesasRedondas';
+import Conferencias from './pages/Programacao/Conferencias';
+import Minicursos from './pages/Programacao/Minicursos';
+import SeminariosTematicos from './pages/Programacao/SeminariosTematicos';
+import Cartazes from './pages/Programacao/Cartazes';
+import LancamentoLivros from './pages/Programacao/LancamentoLivros';
 
 
 ReactDOM.render(

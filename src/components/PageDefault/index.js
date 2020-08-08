@@ -1,11 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import Header from '../Header';
+import styled from 'styled-components';
 
 const Main = styled.main`
     color: var(--black);
     flex: 1;
-    padding-top: 5%;
     padding: 0% 10%;
     margin-top: 30px;
     margin-bottom: 20px;
