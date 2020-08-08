@@ -1,12 +1,12 @@
 import React from 'react';
 import PageDefault from '../../components/PageDefault';
 
-function Inicio() {
+function Apoio() {
   return(
-    <PageDefault title="Inicio">
-      <p>Texto da seção Inicio</p>
+    <PageDefault title="Apoio">
+      <p>Texto da seção Apoio</p>
     </PageDefault>
   );
 }
 
-export default Inicio;
+export default Apoio;

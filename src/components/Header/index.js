@@ -89,6 +89,10 @@ export default function Header( { title } ) {
           <ListItemText primary='Contato' />
         </ListItem>
 
+        <ListItem button key='Apoio' component={Link} to="/apoio">
+          <ListItemText primary='Apoio' />
+        </ListItem>
+
       </List>
     </div>
   );

@@ -8,6 +8,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Inicio from './pages/Inicio';
 import Contato from './pages/Contato';
+import Apoio from './pages/Apoio';
 import Agenda from './pages/Agenda';
 import MesasRedondas from './pages/MesasRedondas';
 import Conferencias from './pages/Conferencias';
@@ -24,7 +25,8 @@ ReactDOM.render(
         <BrowserRouter>
           <Switch>
             <Route path="/" component={Inicio} exact />
-            <Route path="/contato" component={Contato} exact />
+            <Route path="/contato" component={Contato} />
+            <Route path="/apoio" component={Apoio} />
             <Route path="/programacao/agenda" component={Agenda} />
             <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
             <Route path="/programacao/conferencias" component={Conferencias} />
