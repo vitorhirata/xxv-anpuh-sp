@@ -12,7 +12,6 @@ const Main = styled.main`
 
 function PageDefault({ title, children }) {
   console.log('__titulo', title);
-  console.log('__chidren', children);
   return (
     <div>
       <Header title={title} />

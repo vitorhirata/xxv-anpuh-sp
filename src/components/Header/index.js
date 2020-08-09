@@ -60,17 +60,20 @@ const useStyles = makeStyles((theme) => ({
     background: '#F4B303',
     position: "relative",
     top: '-16px',
-    height: '122px',
+    height: '150px',
   },
   nested: {
     paddingLeft: theme.spacing(4),
   },
 }));
 
+
 export default function Header( { title } ) {
   const classes = useStyles();
+  const baseItem = ["Início", "Instruções do Encontro", "Contato", "Apoio"];
+  const isBaseItem = baseItem.includes(title);
   const [state, setState] = React.useState({ left: false });
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(isBaseItem ? false : true);
 
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -89,10 +92,10 @@ export default function Header( { title } ) {
     >
       <div className={classes.menuTitle}>
         <H1>
-          XXV Encontro Estadual de História
+          XXV Encontro Estadual de História da ANPUH-SP
         </H1>
         <H2>
-          Histórias, desigualdades e diferenças
+          História, desigualdades e diferenças
         </H2>
       </div>
       <List className={classes.listComponent}>

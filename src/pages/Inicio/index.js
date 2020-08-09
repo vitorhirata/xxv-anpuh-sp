@@ -22,7 +22,7 @@ const Image = styled.img`
 
 function Inicio() {
   return(
-    <PageDefault title="Inicio">
+    <PageDefault title="Início">
       <P>
         A ANPUH-SP, com a colaboração de docentes da PUC-SP, tem a satisfação
         de receber a comunidade acadêmica no XXV Encontro Estadual de História, que
