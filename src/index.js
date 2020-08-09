@@ -9,6 +9,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Inicio from './pages/Inicio';
 import Contato from './pages/Contato';
 import Apoio from './pages/Apoio';
+import InstrucaoEncontro from './pages/InstrucaoEncontro';
 import Agenda from './pages/Programacao/Agenda';
 import MesasRedondas from './pages/Programacao/MesasRedondas';
 import Conferencias from './pages/Programacao/Conferencias';
@@ -27,6 +28,7 @@ ReactDOM.render(
             <Route path="/" component={Inicio} exact />
             <Route path="/contato" component={Contato} />
             <Route path="/apoio" component={Apoio} />
+            <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
             <Route path="/programacao/agenda" component={Agenda} />
             <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
             <Route path="/programacao/conferencias" component={Conferencias} />

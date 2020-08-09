@@ -137,6 +137,9 @@ export default function Header( { title } ) {
           </List>
         </Collapse>
 
+        <ListItem button key='Instruções do Encontro' component={Link} to="/instrucao_encontro">
+          <ListItemText primary='Instruções do Encontro' />
+        </ListItem>
 
         <ListItem button key='Contato' component={Link} to="/contato">
           <ListItemText primary='Contato' />
