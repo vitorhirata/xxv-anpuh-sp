@@ -130,8 +130,8 @@ export default function Header( { title } ) {
               <ListItemText primary='Seminários Temáticos' />
             </ListItem>
 
-            <ListItem button key='Cartazes' className={classes.nested} component={Link} to="/programacao/cartazes">
-              <ListItemText primary='Cartazes' />
+            <ListItem button key='Apresentação de pôster' className={classes.nested} component={Link} to="/programacao/apresentacao_poster">
+              <ListItemText primary='Apresentação de pôster' />
             </ListItem>
 
             <ListItem button key='Lançamento de Livros' className={classes.nested} component={Link} to="/programacao/lancamento_livros">

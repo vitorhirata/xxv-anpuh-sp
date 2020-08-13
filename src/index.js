@@ -15,7 +15,7 @@ import MesasRedondas from './pages/Programacao/MesasRedondas';
 import Conferencias from './pages/Programacao/Conferencias';
 import Minicursos from './pages/Programacao/Minicursos';
 import SeminariosTematicos from './pages/Programacao/SeminariosTematicos';
-import Cartazes from './pages/Programacao/Cartazes';
+import ApresentacaoPoster from './pages/Programacao/ApresentacaoPoster';
 import LancamentoLivros from './pages/Programacao/LancamentoLivros';
 
 
@@ -34,7 +34,7 @@ ReactDOM.render(
             <Route path="/programacao/conferencias" component={Conferencias} />
             <Route path="/programacao/minicursos" component={Minicursos} />
             <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
-            <Route path="/programacao/cartazes" component={Cartazes} />
+            <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster} />
             <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
           </Switch>
         </BrowserRouter>

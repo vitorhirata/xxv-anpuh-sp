@@ -1,10 +1,12 @@
 import React from 'react';
 import PageDefault from '../../../components/PageDefault';
+import '../index.css';
+
 
 function Conferencias() {
   return(
     <PageDefault title="Conferências">
-      <p>Texto da seção Conferências</p>
+      <h3>Em breve!</h3>
     </PageDefault>
   );
 }
