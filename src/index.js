@@ -12,10 +12,14 @@ import Apoio from './pages/Apoio';
 import InstrucaoEncontro from './pages/InstrucaoEncontro';
 import Agenda from './pages/Programacao/Agenda';
 import MesasRedondas from './pages/Programacao/MesasRedondas';
+import MesasRedondasShow from './pages/Programacao/MesasRedondas/show.js';
 import Conferencias from './pages/Programacao/Conferencias';
 import Minicursos from './pages/Programacao/Minicursos';
+import MinicursosShow from './pages/Programacao/Minicursos/show.js';
 import SeminariosTematicos from './pages/Programacao/SeminariosTematicos';
+import SeminariosTematicosShow from './pages/Programacao/SeminariosTematicos/show.js';
 import ApresentacaoPoster from './pages/Programacao/ApresentacaoPoster';
+import ApresentacaoPosterShow from './pages/Programacao/ApresentacaoPoster/show.js';
 import LancamentoLivros from './pages/Programacao/LancamentoLivros';
 
 
@@ -30,11 +34,15 @@ ReactDOM.render(
             <Route path="/apoio" component={Apoio} />
             <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
             <Route path="/programacao/agenda" component={Agenda} />
+            <Route path="/programacao/mesas_redondas/:id" component={MesasRedondasShow} />
             <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
             <Route path="/programacao/conferencias" component={Conferencias} />
+            <Route path="/programacao/minicursos/:id" component={MinicursosShow} />
             <Route path="/programacao/minicursos" component={Minicursos} />
+            <Route path="/programacao/seminarios_tematicos/:id" component={SeminariosTematicosShow} />
             <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
-            <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster} />
+            <Route path="/programacao/apresentacao_poster/:id" component={ApresentacaoPosterShow} />
+            <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster}/>
             <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
           </Switch>
         </BrowserRouter>

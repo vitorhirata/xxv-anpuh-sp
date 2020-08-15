@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header';
+import HeaderBack from '../HeaderBack';
 import styled from 'styled-components';
 
 const Main = styled.main`
@@ -10,11 +11,14 @@ const Main = styled.main`
     margin-bottom: 20px;
 `;
 
-function PageDefault({ title, children }) {
+function PageDefault({ title, backPath, children }) {
+  const isBasePage = backPath === undefined;
   console.log('__titulo', title);
+  console.log('__isBasePage', isBasePage);
+
   return (
     <div>
-      <Header title={title} />
+      {isBasePage ? <Header title={title} /> : <HeaderBack title={title} backPath={backPath}></HeaderBack>}
       <Main>
         {children}
       </Main>
