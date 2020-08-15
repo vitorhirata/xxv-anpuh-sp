@@ -4,6 +4,7 @@ import './index.css';
 import theme from './theme';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ScrollToTop from 'react-router-scroll-top'
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Inicio from './pages/Inicio';
@@ -28,23 +29,25 @@ ReactDOM.render(
     <CssBaseline >
       <ThemeProvider theme={theme}>
         <BrowserRouter>
-          <Switch>
-            <Route path="/" component={Inicio} exact />
-            <Route path="/contato" component={Contato} />
-            <Route path="/apoio" component={Apoio} />
-            <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
-            <Route path="/programacao/agenda" component={Agenda} />
-            <Route path="/programacao/mesas_redondas/:id" component={MesasRedondasShow} />
-            <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
-            <Route path="/programacao/conferencias" component={Conferencias} />
-            <Route path="/programacao/minicursos/:id" component={MinicursosShow} />
-            <Route path="/programacao/minicursos" component={Minicursos} />
-            <Route path="/programacao/seminarios_tematicos/:id" component={SeminariosTematicosShow} />
-            <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
-            <Route path="/programacao/apresentacao_poster/:id" component={ApresentacaoPosterShow} />
-            <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster}/>
-            <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
-          </Switch>
+          <ScrollToTop>
+            <Switch>
+              <Route path="/" component={Inicio} exact />
+              <Route path="/contato" component={Contato} />
+              <Route path="/apoio" component={Apoio} />
+              <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
+              <Route path="/programacao/agenda" component={Agenda} />
+              <Route path="/programacao/mesas_redondas/:id" component={MesasRedondasShow} />
+              <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
+              <Route path="/programacao/conferencias" component={Conferencias} />
+              <Route path="/programacao/minicursos/:id" component={MinicursosShow} />
+              <Route path="/programacao/minicursos" component={Minicursos} />
+              <Route path="/programacao/seminarios_tematicos/:id" component={SeminariosTematicosShow} />
+              <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
+              <Route path="/programacao/apresentacao_poster/:id" component={ApresentacaoPosterShow} />
+              <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster}/>
+              <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
+            </Switch>
+          </ScrollToTop>
         </BrowserRouter>
       </ThemeProvider>
     </CssBaseline>
