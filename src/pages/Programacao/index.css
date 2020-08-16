@@ -23,6 +23,22 @@ h4.align-right {
   text-align: right;
 }
 
+h5.agenda {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+h5.agenda-small {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
 p {
   font-weight: 300;
   font-size: 15px;
@@ -30,6 +46,20 @@ p {
   position: relative;
   top: -5px;
   margin: 0px;
+}
+
+.see-more-resumo {
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-top: 10px;
+}
+
+.see-more {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-decoration: underline;
 }
 
 ul {
