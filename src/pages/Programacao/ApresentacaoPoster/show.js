@@ -18,7 +18,7 @@ function ApresentacaoPosterShow() {
   const poster = posteres.filter((poster) => {return poster.id === Number(id)})[0];
 
   return(
-    <PageDefault title="Apresentação de pôster" backPath="/programacao/apresentacao_poster">
+    <PageDefault title="Apresentação de pôsteres" backPath="/programacao/apresentacao_poster">
       <ContentWrapper key={`poster${poster.id}`}>
         <h2>{poster.título}</h2>
         <p>{poster.responsável}</p>

@@ -7,7 +7,6 @@ const Main = styled.main`
     color: var(--black);
     flex: 1;
     padding: 0% 10%;
-    margin-top: 30px;
     margin-bottom: 20px;
 `;
 
@@ -15,11 +14,12 @@ function PageDefault({ title, backPath, children }) {
   const isBasePage = backPath === undefined;
   console.log('__titulo', title);
   console.log('__isBasePage', isBasePage);
+  const margin = isBasePage ? 76 : 65;
 
   return (
     <div>
       {isBasePage ? <Header title={title} /> : <HeaderBack title={title} backPath={backPath}></HeaderBack>}
-      <Main>
+      <Main style={{marginTop: margin}}>
         {children}
       </Main>
     </div>

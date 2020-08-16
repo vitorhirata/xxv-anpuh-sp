@@ -14,6 +14,8 @@ import Drawer from '@material-ui/core/Drawer';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Slide from '@material-ui/core/Slide';
 
 const H1 = styled.h1`
     font-weight: 300;
@@ -74,6 +76,7 @@ export default function Header( { title } ) {
   const isBaseItem = baseItem.includes(title);
   const [state, setState] = React.useState({ left: false });
   const [open, setOpen] = React.useState(isBaseItem ? false : true);
+  const trigger = useScrollTrigger();
 
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -158,19 +161,21 @@ export default function Header( { title } ) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color='primary'>
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" key={'left'}>
-            <MenuIcon onClick={toggleDrawer(true)} />
-            <Drawer open={state['left']} onClose={toggleDrawer(false)} classes={{ paper: classes.paper }}>
-              {list()}
-            </Drawer>
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            { title }
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Slide in={!trigger}>
+        <AppBar position="fixed" color='primary'>
+          <Toolbar>
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" key={'left'}>
+              <MenuIcon onClick={toggleDrawer(true)} />
+              <Drawer open={state['left']} onClose={toggleDrawer(false)} classes={{ paper: classes.paper }}>
+                {list()}
+              </Drawer>
+            </IconButton>
+            <Typography variant="h6" className={classes.title}>
+              { title }
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </Slide>
     </div>
   );
 }

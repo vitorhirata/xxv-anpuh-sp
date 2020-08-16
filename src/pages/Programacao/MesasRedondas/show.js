@@ -21,8 +21,9 @@ function MesasRedondasShow() {
     <PageDefault title="Mesas Redondas" backPath="/programacao/mesas_redondas">
       <ContentWrapper key={`mesas_redonda${mesas_redonda.id}`}>
         <h2>{mesas_redonda.título}</h2>
-        <h4>{mesas_redonda.horário}</h4>
+        <h4 className='align-right'>{mesas_redonda.horário}</h4>
         <br/>
+        <h4>DEBATEDORES</h4>
         <p>{mesas_redonda.participantes}</p>
         <br/>
         <TextWithNewLine>{mesas_redonda.resumo}</TextWithNewLine>
