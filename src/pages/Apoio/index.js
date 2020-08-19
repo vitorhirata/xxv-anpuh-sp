@@ -1,8 +1,8 @@
 import React from 'react';
 import PageDefault from '../../components/PageDefault';
 import styled from 'styled-components';
-import ANPUH_logo from '../../data/ANPUH-SP_logo.png';
-import FFLCH_logo from '../../data/FFLCH_logo.png';
+import ANPUH_logo from '../../data/ANPUH-SP_logo.webp';
+import FFLCH_logo from '../../data/FFLCH_logo.webp';
 
 const ImageWrapper = styled.div`
   display: flex;

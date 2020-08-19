@@ -1,7 +1,7 @@
 import React from 'react';
 import PageDefault from '../../components/PageDefault';
 import styled from 'styled-components';
-import cartaz from '../../data/cartaz.png';
+import cartaz from '../../data/cartaz.webp';
 
 const P = styled.p`
   margin-bottom: 10px;
@@ -48,11 +48,11 @@ function Inicio() {
         perversos desdobramentos na vida atual e futura.
       </P>
 
-      <P>Para acessar o site do evento <a
+      <P>Clique no link a seguir para acessar o <a
         href="https://www.encontro2020.sp.anpuh.org/"
         target="_blank"
         rel="noopener noreferrer"
-        style={{textDecoration: 'underline', color: 'blue'}}>clique aqui</a>.
+        style={{textDecoration: 'underline', color: 'blue'}}>site do evento</a>.
       </P>
 
       <ImageContainer>
