@@ -73,7 +73,7 @@ ul hr {
   border-bottom: 0px;
 }
 
-ul hr:last-child {
+ul li:last-child hr{
   display: none;
 }
 

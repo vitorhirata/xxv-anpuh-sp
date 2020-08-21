@@ -26,7 +26,7 @@ function SeminariosTematicosShow() {
 
   return(
     <PageDefault title="Seminários Temáticos" backPath="/programacao/seminarios_tematicos">
-      <ContentWrapper key={`seminario_tematico${seminario_tematico.id}`}>
+      <ContentWrapper>
         <h2>{seminario_tematico.título}</h2>
         <p>{seminario_tematico.coordenadores}</p>
         <br/>
@@ -40,19 +40,20 @@ function SeminariosTematicosShow() {
         <TextWithNewLine>{seminario_tematico.bibliografia}</TextWithNewLine>
         <br/>
         <H3>Programação</H3>
+        <ul>
         {
-          seminario_tematico.programação.map((seminario_tematico_secao) => {
+          seminario_tematico.programação.map((seminario_tematico_programacao_item) => {
             return (
-              <>
-                <h3>{seminario_tematico_secao.seção}</h3>
+              <li key={`seminario_tematico_programacao_item${seminario_tematico_programacao_item.seção}`}>
+                <h3>{seminario_tematico_programacao_item.seção}</h3>
                 <ul>
                   {
-                    seminario_tematico_secao.eventos.map((seminario_tematico_evento) => {
+                    seminario_tematico_programacao_item.eventos.map((seminario_tematico_evento) => {
                       return (
-                        <li key={`seminario_tematico_evento${seminario_tematico_evento.titulo}`}>
-                          <h5 class='agenda'>{seminario_tematico_evento.título}</h5>
-                          <h5 class='agenda-small'>{seminario_tematico_evento.responsável}</h5>
-                          <span class='see-more-resumo'>
+                        <li key={`seminario_tematico_resumo${seminario_tematico_evento.título}`}>
+                          <h5 className='agenda'>{seminario_tematico_evento.título}</h5>
+                          <h5 className='agenda-small'>{seminario_tematico_evento.responsável}</h5>
+                          <span className='see-more-resumo'>
                             <ShowMoreText
                               lines={2}
                               more='Ver mais'
@@ -61,17 +62,17 @@ function SeminariosTematicosShow() {
                               expanded={false}
                               width={280}
                             >
-                              <p class='see-more-resumo'>{'Resumo: ' + seminario_tematico_evento.resumo}</p>
+                              <p className='see-more-resumo'>{'Resumo: ' + seminario_tematico_evento.resumo}</p>
                             </ShowMoreText>
                           </span>
                         </li>
                       );})
                   }
                 </ul>
-              </>
-
+              </li>
             );})
         }
+        </ul>
       </ContentWrapper>
     </PageDefault>
   );

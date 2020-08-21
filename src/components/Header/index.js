@@ -74,24 +74,16 @@ export default function Header( { title } ) {
   const classes = useStyles();
   const baseItem = ["Início", "Instruções do Encontro", "Contato", "Apoio"];
   const isBaseItem = baseItem.includes(title);
-  const [state, setState] = React.useState({ left: false });
+  const [state, setState] = React.useState(false);
   const [open, setOpen] = React.useState(isBaseItem ? false : true);
   const trigger = useScrollTrigger();
 
-  const toggleDrawer = (open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, left: open });
-  };
+  const toggleDrawer = (input) => (event) => { setState(input); };
 
   const list = () => (
     <div
       className={classes.list}
       role="presentation"
-      onClick={() => {toggleDrawer(false)} }
-      onKeyDown={toggleDrawer(false)}
     >
       <div className={classes.menuTitle}>
         <H1>
@@ -164,16 +156,16 @@ export default function Header( { title } ) {
       <Slide in={!trigger}>
         <AppBar position="fixed" color='primary'>
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" key={'left'}>
-              <MenuIcon onClick={toggleDrawer(true)} />
-              <Drawer open={state['left']} onClose={toggleDrawer(false)} classes={{ paper: classes.paper }}>
-                {list()}
-              </Drawer>
+            <IconButton onClick={toggleDrawer(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+              <MenuIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
               { title }
             </Typography>
           </Toolbar>
+          <Drawer open={state} onClose={toggleDrawer(false)} classes={{ paper: classes.paper }}>
+            {list()}
+          </Drawer>
         </AppBar>
       </Slide>
     </div>

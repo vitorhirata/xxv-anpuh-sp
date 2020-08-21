@@ -10,15 +10,13 @@ function Minicursos() {
       <ul>
         {minicursos.map((minicurso) => {
           return (
-            <>
-              <li key={`minicurso${minicurso.id}${minicurso.título}`}>
-                <Link to={`/programacao/minicursos/${minicurso.id}`}>
-                  <h2 className='text-link'>{minicurso.título}</h2>
-                  <p>{minicurso.coordenadores}</p>
-                </Link>
-              </li>
+            <li key={`minicurso${minicurso.id}${minicurso.título}`}>
+              <Link to={`/programacao/minicursos/${minicurso.id}`}>
+                <h2 className='text-link'>{minicurso.título}</h2>
+                <p>{minicurso.coordenadores}</p>
+              </Link>
               <hr/>
-            </>
+            </li>
           );
         })}
       </ul>

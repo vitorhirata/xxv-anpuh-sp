@@ -10,15 +10,13 @@ function ApresentacaoPoster() {
       <ul>
         {posteres.map((poster) => {
           return (
-            <>
-              <li key={`poster${poster.id}${poster.título}`}>
-                <Link to={`/programacao/apresentacao_poster/${poster.id}`}>
-                  <h2 className='text-link'>{poster.título}</h2>
-                  <p>{poster.responsável}</p>
-                </Link>
-              </li>
+            <li key={`poster${poster.id}${poster.título}`}>
+              <Link to={`/programacao/apresentacao_poster/${poster.id}`}>
+                <h2 className='text-link'>{poster.título}</h2>
+                <p>{poster.responsável}</p>
+              </Link>
               <hr/>
-            </>
+            </li>
           );
         })}
       </ul>

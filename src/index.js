@@ -25,33 +25,31 @@ import LancamentoLivros from './pages/Programacao/LancamentoLivros';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <CssBaseline >
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <ScrollToTop>
-            <Switch>
-              <Route path="/" component={Inicio} exact />
-              <Route path="/contato" component={Contato} />
-              <Route path="/apoio" component={Apoio} />
-              <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
-              <Route path="/programacao/agenda" component={Agenda} />
-              <Route path="/programacao/mesas_redondas/:id" component={MesasRedondasShow} />
-              <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
-              <Route path="/programacao/conferencias" component={Conferencias} />
-              <Route path="/programacao/minicursos/:id" component={MinicursosShow} />
-              <Route path="/programacao/minicursos" component={Minicursos} />
-              <Route path="/programacao/seminarios_tematicos/:id" component={SeminariosTematicosShow} />
-              <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
-              <Route path="/programacao/apresentacao_poster/:id" component={ApresentacaoPosterShow} />
-              <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster}/>
-              <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
-            </Switch>
-          </ScrollToTop>
-        </BrowserRouter>
-      </ThemeProvider>
-    </CssBaseline>
-  </React.StrictMode>,
+  <CssBaseline >
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <ScrollToTop>
+          <Switch>
+            <Route path="/" component={Inicio} exact />
+            <Route path="/contato" component={Contato} />
+            <Route path="/apoio" component={Apoio} />
+            <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
+            <Route path="/programacao/agenda" component={Agenda} />
+            <Route path="/programacao/mesas_redondas/:id" component={MesasRedondasShow} />
+            <Route path="/programacao/mesas_redondas" component={MesasRedondas} />
+            <Route path="/programacao/conferencias" component={Conferencias} />
+            <Route path="/programacao/minicursos/:id" component={MinicursosShow} />
+            <Route path="/programacao/minicursos" component={Minicursos} />
+            <Route path="/programacao/seminarios_tematicos/:id" component={SeminariosTematicosShow} />
+            <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
+            <Route path="/programacao/apresentacao_poster/:id" component={ApresentacaoPosterShow} />
+            <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster}/>
+            <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
+          </Switch>
+        </ScrollToTop>
+      </BrowserRouter>
+    </ThemeProvider>
+  </CssBaseline>,
   document.getElementById('root')
 );
 

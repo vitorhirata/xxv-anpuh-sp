@@ -10,15 +10,13 @@ function SeminariosTematicos() {
       <ul>
         {seminarios_tematicos.map((seminario_tematico) => {
           return (
-            <>
-              <li key={`seminario_tematico${seminario_tematico.id}`}>
-                <Link to={`/programacao/seminarios_tematicos/${seminario_tematico.id}`}>
-                  <h2 className='text-link'>{seminario_tematico.título}</h2>
-                  <p>{seminario_tematico.coordenadores}</p>
-                </Link>
-              </li>
+            <li key={`seminario_tematico${seminario_tematico.id}`}>
+              <Link to={`/programacao/seminarios_tematicos/${seminario_tematico.id}`}>
+                <h2 className='text-link'>{seminario_tematico.título}</h2>
+                <p>{seminario_tematico.coordenadores}</p>
+              </Link>
               <hr/>
-            </>
+            </li>
           );
         })}
       </ul>

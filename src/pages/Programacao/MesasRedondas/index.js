@@ -10,15 +10,13 @@ function MesasRedondas() {
       <ul>
         {mesas_redondas.map((mesa_redonda) => {
           return (
-            <>
-              <li key={`mesa_redonda${mesa_redonda.id}`}>
-                <Link to={`/programacao/mesas_redondas/${mesa_redonda.id}`}>
-                  <h2 className='text-link'>{mesa_redonda.título}</h2>
-                  <p>{mesa_redonda.participantes}</p>
-                </Link>
-              </li>
+            <li key={`mesa_redonda${mesa_redonda.id}`}>
+              <Link to={`/programacao/mesas_redondas/${mesa_redonda.id}`}>
+                <h2 className='text-link'>{mesa_redonda.título}</h2>
+                <p>{mesa_redonda.participantes}</p>
+              </Link>
               <hr/>
-            </>
+            </li>
           );
         })}
       </ul>
