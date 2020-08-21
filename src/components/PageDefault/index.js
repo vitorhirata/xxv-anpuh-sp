@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import HeaderBack from '../HeaderBack';
 import styled from 'styled-components';
+import NotificationContainer from '../NotificationContainer';
 
 const Main = styled.main`
     color: var(--black);
@@ -12,12 +13,11 @@ const Main = styled.main`
 
 function PageDefault({ title, backPath, children }) {
   const isBasePage = backPath === undefined;
-  console.log('__titulo', title);
-  console.log('__isBasePage', isBasePage);
   const margin = isBasePage ? 76 : 65;
 
   return (
     <div>
+      <NotificationContainer/>
       {isBasePage ? <Header title={title} /> : <HeaderBack title={title} backPath={backPath}></HeaderBack>}
       <Main style={{marginTop: margin}}>
         {children}

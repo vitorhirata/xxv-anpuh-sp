@@ -48,7 +48,7 @@ function Inicio() {
         perversos desdobramentos na vida atual e futura.
       </P>
 
-      <P>Clique no link a seguir para acessar o <a
+      <P>Clique no link para acessar o <a
         href="https://www.encontro2020.sp.anpuh.org/"
         target="_blank"
         rel="noopener noreferrer"

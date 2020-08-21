@@ -15,11 +15,12 @@
     "react-router-scroll-top": "^0.2.1",
     "react-scripts": "3.4.1",
     "react-show-more-text": "^1.4.3",
+    "react-update-notification": "0.1.0-alpha.4",
     "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && generate-version -s package",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
