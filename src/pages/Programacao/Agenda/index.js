@@ -40,8 +40,7 @@ function Agenda() {
         <h4>Seminários Temáticos</h4>
 
         <h3>19h30 - 21h</h3>
-        <h4>Abertura</h4>
-        <h4>Conferência</h4>
+        <h4>Conferência de Abertura</h4>
       </DayWrapper>
 
       <DayWrapper>
@@ -120,8 +119,7 @@ function Agenda() {
         <h4>Seminários Temáticos</h4>
 
         <h3>19h30 - 21h</h3>
-        <h4>Conferência</h4>
-        <h4>Encerramento</h4>
+        <h4>Conferência de Encerramento</h4>
       </DayWrapper>
     </PageDefault>
   );

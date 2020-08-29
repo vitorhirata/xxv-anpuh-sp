@@ -2,6 +2,7 @@ h2 {
   font-weight: 300;
   font-size: 22px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: #202020;
 }
 
 h3 {
@@ -9,6 +10,7 @@ h3 {
   font-size: 16px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   margin-bottom: 5px;
+  color: #202020;
 }
 
 h4 {
@@ -16,6 +18,7 @@ h4 {
   font-size: 14px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   margin: 5px 0px;
+  color: #202020;
 }
 
 h4.align-right {
@@ -29,6 +32,7 @@ h5.agenda {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   margin-bottom: 5px;
   margin-top: 0px;
+  color: #202020;
 }
 
 h5.agenda-small {
@@ -37,6 +41,7 @@ h5.agenda-small {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   margin-bottom: 5px;
   margin-top: 0px;
+  color: #202020;
 }
 
 p {
@@ -46,6 +51,7 @@ p {
   position: relative;
   top: -5px;
   margin: 0px;
+  color: #202020;
 }
 
 .see-more-resumo {

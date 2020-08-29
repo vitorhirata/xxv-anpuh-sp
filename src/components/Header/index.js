@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header( { title } ) {
   const classes = useStyles();
-  const baseItem = ["Início", "Instruções do Encontro", "Contato", "Apoio"];
+  const baseItem = ["Início", "Instruções de Participação", "Contato", "Apoio"];
   const isBaseItem = baseItem.includes(title);
   const [state, setState] = React.useState(false);
   const [open, setOpen] = React.useState(isBaseItem ? false : true);
@@ -135,8 +135,8 @@ export default function Header( { title } ) {
           </List>
         </Collapse>
 
-        <ListItem button key='Instruções do Encontro' component={Link} to="/instrucao_encontro">
-          <ListItemText primary='Instruções do Encontro' />
+        <ListItem button key='Instruções de Participação' component={Link} to="/instrucao_encontro">
+          <ListItemText primary='Instruções de Participação' />
         </ListItem>
 
         <ListItem button key='Contato' component={Link} to="/contato">

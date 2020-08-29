@@ -27,6 +27,13 @@ function MesasRedondasShow() {
         <p>{mesas_redonda.participantes}</p>
         <br/>
         <TextWithNewLine>{mesas_redonda.resumo}</TextWithNewLine>
+        <br/>
+        <h4>LIVE NO YOUTUBE</h4>
+        <div style={{width: "100%", height: "200px"}}>
+          <iframe title={`mesas_redonda${mesas_redonda.título}`} id="ytplayer" type="text/html" width="100%" height="100%"
+            src={mesas_redonda.youtubeLink}
+            frameborder="0"></iframe>
+        </div>
       </ContentWrapper>
     </PageDefault>
   );
