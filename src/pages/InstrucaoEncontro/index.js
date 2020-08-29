@@ -3,7 +3,7 @@ import PageDefault from '../../components/PageDefault';
 
 function InstrucaoEncontro() {
   return(
-    <PageDefault title="Instruções do Encontro">
+    <PageDefault title="Instruções de Participação">
       <p>Em breve!</p>
     </PageDefault>
   );

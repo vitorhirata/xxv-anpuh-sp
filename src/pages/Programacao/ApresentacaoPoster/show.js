@@ -23,6 +23,7 @@ function ApresentacaoPosterShow() {
         <h2>{poster.título}</h2>
         <p>{poster.responsável}</p>
         <br/>
+        <h4>RESUMO</h4>
         <TextWithNewLine>{poster.resumo}</TextWithNewLine>
       </ContentWrapper>
     </PageDefault>

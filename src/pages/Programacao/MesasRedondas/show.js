@@ -26,6 +26,7 @@ function MesasRedondasShow() {
         <h4>DEBATEDORES</h4>
         <p>{mesas_redonda.participantes}</p>
         <br/>
+        <h4>RESUMO</h4>
         <TextWithNewLine>{mesas_redonda.resumo}</TextWithNewLine>
       </ContentWrapper>
     </PageDefault>

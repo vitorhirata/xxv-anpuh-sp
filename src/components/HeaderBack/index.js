@@ -16,14 +16,12 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  link: {
-    height: 27,
-  },
   title: {
     flexGrow: 1,
     fontSize: '0.9rem',
     fontWeight: 400,
     textDecoration: 'underline',
+    ["@media (max-width: 328px)"]: { fontSize: "0.7rem" },
   },
   appBar: {
     height: 45,
@@ -44,7 +42,7 @@ export default function HeaderBack( { title, backPath } ) {
         <AppBar className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="back">
-              <Link to={backPath} className={classes.link}>
+              <Link to={backPath}>
                 <ArrowBackRoundedIcon />
               </Link>
             </IconButton>
