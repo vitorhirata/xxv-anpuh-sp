@@ -23,6 +23,14 @@ function ApresentacaoPosterShow() {
         <h2>{poster.título}</h2>
         <p>{poster.responsável}</p>
         <br/>
+        <h4>APRESENTAÇÂO NO YOUTUBE</h4>
+        <div style={{width: "100%", height: "200px"}}>
+          <iframe title={`Poster: ${poster.título}`}
+            id="ytplayer" type="text/html" width="100%" height="100%" allowFullScreen
+            src={`https://www.youtube.com/embed/${poster.youtubeVideoId}`}
+            frameBorder="0"></iframe>
+        </div>
+        <br/>
         <h4>RESUMO</h4>
         <TextWithNewLine>{poster.resumo}</TextWithNewLine>
       </ContentWrapper>

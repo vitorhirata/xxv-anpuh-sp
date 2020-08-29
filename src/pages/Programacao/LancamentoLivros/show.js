@@ -48,12 +48,46 @@ function LancamentoLivrosShow() {
     );
   }
 
+  const LinkYoutube = () => {
+    if (livro.youtubeVideoId === '') { return null; }
+    return(
+      <>
+        <h4>VIDEO DE APRESENTAÇÃO DO LIVRO</h4>
+        <div style={{width: "100%", height: "200px"}}>
+          <iframe title={`Livro: ${livro.título}`}
+            id="ytplayer" type="text/html" width="100%" height="100%" allowFullScreen
+            src={`https://www.youtube.com/embed/${livro.youtubeVideoId}`}
+            frameBorder="0"></iframe>
+        </div>
+        <br/>
+      </>
+    );
+  }
+
+  const LinkVimeo = () => {
+    if (livro.vimeoVideoId === '') { return null; }
+    return(
+      <>
+        <h4>VIDEO DE APRESENTAÇÃO DO LIVRO</h4>
+        <div style={{width: "100%", height: "200px"}}>
+          <iframe title={`Livro: ${livro.título}`}
+            id="ytplayer" type="text/html" width="100%" height="100%" allowFullScreen
+            src={`https://player.vimeo.com/video/${livro.vimeoVideoId}`}
+            frameBorder="0"></iframe>
+        </div>
+        <br/>
+      </>
+    );
+  }
+
   return(
     <PageDefault title='Lançamento de Livros' backPath='/programacao/lancamento_livros'>
       <ContentWrapper key={`livro${livro.id}`}>
         <h2>{livro.título}</h2>
         <h3>{livro.autor}</h3>
         <br/>
+        <LinkYoutube />
+        <LinkVimeo />
         <Resumo />
         <InstrucaoCompra />
       </ContentWrapper>
