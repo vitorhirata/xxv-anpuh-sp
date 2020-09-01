@@ -22,6 +22,7 @@ import SeminariosTematicosShow from './pages/Programacao/SeminariosTematicos/sho
 import ApresentacaoPoster from './pages/Programacao/ApresentacaoPoster';
 import ApresentacaoPosterShow from './pages/Programacao/ApresentacaoPoster/show.js';
 import LancamentoLivros from './pages/Programacao/LancamentoLivros';
+import LancamentoLivrosShow from './pages/Programacao/LancamentoLivros/show.js';
 
 
 ReactDOM.render(
@@ -44,6 +45,7 @@ ReactDOM.render(
             <Route path="/programacao/seminarios_tematicos" component={SeminariosTematicos} />
             <Route path="/programacao/apresentacao_poster/:id" component={ApresentacaoPosterShow} />
             <Route path="/programacao/apresentacao_poster" component={ApresentacaoPoster}/>
+            <Route path="/programacao/lancamento_livros/:id" component={LancamentoLivrosShow} />
             <Route path="/programacao/lancamento_livros" component={LancamentoLivros} />
           </Switch>
         </ScrollToTop>
