@@ -24,19 +24,38 @@ function LancamentoLivrosShow() {
   const { id } = useParams();
   const livro = livros.filter((livro) => {return livro.id === Number(id)})[0];
 
+  const Resumo = () => {
+    if (livro.resumo === '') { return null; }
+    return(
+      <>
+        <h4>RESUMO</h4>
+        <TextWithNewLine>{livro.resumo}</TextWithNewLine>
+        <br/>
+      </>
+    );
+  }
+
+  const InstrucaoCompra = () => {
+    if (livro.instruçãoCompra === '') { return null; }
+    return(
+      <>
+        <h4>INFORMAÇÕES PARA COMPRA</h4>
+        <TextWithNewLine>
+          <Linkify componentDecorator={linkTargetDecorator}>{livro.instruçãoCompra}</Linkify>
+        </TextWithNewLine>
+        <br/>
+      </>
+    );
+  }
+
   return(
     <PageDefault title='Lançamento de Livros' backPath='/programacao/lancamento_livros'>
       <ContentWrapper key={`livro${livro.id}`}>
         <h2>{livro.título}</h2>
         <h3>{livro.autor}</h3>
         <br/>
-        {livro.resumo !== '' && <h4>RESUMO</h4> }
-        <TextWithNewLine>{livro.resumo}</TextWithNewLine>
-        <br/>
-        {livro.instruçãoCompra !== '' && <h4>INFORMAÇÕES PARA COMPRA</h4> }
-        <TextWithNewLine>
-          <Linkify componentDecorator={linkTargetDecorator}>{livro.instruçãoCompra}</Linkify>
-        </TextWithNewLine>
+        <Resumo />
+        <InstrucaoCompra />
       </ContentWrapper>
     </PageDefault>
   );

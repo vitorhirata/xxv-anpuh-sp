@@ -11,6 +11,9 @@ import Inicio from './pages/Inicio';
 import Contato from './pages/Contato';
 import Apoio from './pages/Apoio';
 import InstrucaoEncontro from './pages/InstrucaoEncontro';
+import InstrucaoSeminarioTematico from './pages/InstrucaoEncontro/InstrucaoSeminarioTematico';
+import InstrucaoOuvinte from './pages/InstrucaoEncontro/InstrucaoOuvinte';
+import InstrucaoMinicurso from './pages/InstrucaoEncontro/InstrucaoMinicurso';
 import Agenda from './pages/Programacao/Agenda';
 import MesasRedondas from './pages/Programacao/MesasRedondas';
 import MesasRedondasShow from './pages/Programacao/MesasRedondas/show.js';
@@ -24,7 +27,6 @@ import ApresentacaoPosterShow from './pages/Programacao/ApresentacaoPoster/show.
 import LancamentoLivros from './pages/Programacao/LancamentoLivros';
 import LancamentoLivrosShow from './pages/Programacao/LancamentoLivros/show.js';
 
-
 ReactDOM.render(
   <CssBaseline >
     <ThemeProvider theme={theme}>
@@ -34,6 +36,9 @@ ReactDOM.render(
             <Route path="/" component={Inicio} exact />
             <Route path="/contato" component={Contato} />
             <Route path="/apoio" component={Apoio} />
+            <Route path="/instrucao_encontro/instrucao_seminario_tematico" component={InstrucaoSeminarioTematico} />
+            <Route path="/instrucao_encontro/instrucao_ouvinte" component={InstrucaoOuvinte} />
+            <Route path="/instrucao_encontro/instrucao_minicurso" component={InstrucaoMinicurso} />
             <Route path="/instrucao_encontro" component={InstrucaoEncontro} />
             <Route path="/programacao/agenda" component={Agenda} />
             <Route path="/programacao/mesas_redondas/:id" component={MesasRedondasShow} />

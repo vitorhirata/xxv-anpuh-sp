@@ -1,0 +1,16 @@
+.bullet-list {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  position: relative;
+  color: #202020;
+}
+
+.bullet-list li {
+  margin: 10px 0px;
+}
+
+.bullet-list li::before {
+  content: "-";
+  padding-right: 10px;
+}
