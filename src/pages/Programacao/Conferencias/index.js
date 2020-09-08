@@ -14,6 +14,15 @@ function Conferencias() {
           <br/>
           <p>Profª Márcia Motta (Presidente da ANPUH-BR)</p>
           <p>Mediação: Josianne Cerasoli (Presidente da ANPUH-SP)</p>
+          <br/>
+          <h4>LIVE NO YOUTUBE</h4>
+          <div style={{width: "100%", height: "200px"}}>
+            <iframe title="Conferência: Diferenças e desigualdades: inspirações?"
+              id="ytplayer" type="text/html" width="100%" height="100%" allowFullScreen
+              src="https://www.youtube.com/embed/YZUDQOsHy1o"
+              frameBorder="0"></iframe>
+          </div>
+          <br/>
           <hr/>
         </li>
         <li>
@@ -23,6 +32,15 @@ function Conferencias() {
           <br/>
           <p>Profª Josianne Cerasoli (Presidente da ANPUH-SP)</p>
           <p>Mediação: Fábio Franzini (UNIFESP)</p>
+          <br/>
+          <h4>LIVE NO YOUTUBE</h4>
+          <div style={{width: "100%", height: "200px"}}>
+            <iframe title="Conferência: Sob o império do número: desigualdade, (in)diferença e singularidade histórica"
+              id="ytplayer" type="text/html" width="100%" height="100%" allowFullScreen
+              src="https://www.youtube.com/embed/2t7JqHsC6UQ"
+              frameBorder="0"></iframe>
+          </div>
+          <br/>
           <hr/>
         </li>
       </ul>
