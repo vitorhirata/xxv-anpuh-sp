@@ -1,6 +1,6 @@
 # XXV Encontro Estadual de História - ANPUH-SP
 
-Webapp para o XXV Encontro Estadual de História da ANPUH-SP.
+Mobile PWA for the `XXV Encontro Estadual de História da ANPUH-SP`. It is available on [encontro-2020-sp-anpuh.vercel.app](encontro-2020-sp-anpuh.vercel.app) and only works on mobile.
 
 ## Available Scripts
 
